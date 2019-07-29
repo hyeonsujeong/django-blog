@@ -1,0 +1,72 @@
+{% load staticfiles %}
+<html>
+        <head>
+            <title>Writing new content</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+            <link rel="stylesheet" href="../static/style.css" type="text/css">    
+        </head>
+        <body>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <!-- for better mobile display -->
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">ddu_log</a>
+                    </div>
+    
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'index' %}">main</a></li>
+                        <li><a href="{% url 'info' %}">info</a></li>
+                        <li><a href="{% url 'new' %}">writing</a></li>
+                    </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <div class="container">
+                <h2>Portfolio page</h2>
+                <div class="album py-5 bg-light">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img class="card-img-top" src="{% static 'filming.png' %}" style="height: 225px; width: 100%; display: block;" >
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            첫번째 과제
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img class="card-img-top" src="{% static 'sexism.png' %}" style="height: 225px; width: 100%; display: block;" >
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            카드뉴스
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img class="card-img-top" src="{% static 'eva.png' %}" style="height: 225px; width: 100%; display: block;" >
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            좋아하는 것
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </body>
+    </html>

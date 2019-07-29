@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>info</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/style.css" type="text/css">
+        <style>
+            .navbar{
+                margin: 0;
+            }
+        </style>    
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- for better mobile display -->
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">ddu_log</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="{% url 'index' %}">main</a></li>
+                    <li><a href="{% url 'info' %}">info</a></li>
+                    <li><a href="{% url 'new' %}">writing</a></li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>ddu's Blog!</h1>
+                <p>멋사 7기 정현수의 개인 블로그입니다.</p>
+            </div>
+        </div>
+        <div class="container">
+                <br>
+                <p>
+                이 블로그는 bootstrap을 사용하였으며 heroku를 통해 배포되었습니다.<br>
+                좀 더 사적인 제가 궁금하다면, 인스타그램을 방문해 주세요                
+            </p>
+            <a class="btn btn-warning" href="https://www.instagram.com/ddu_u__ddu___/" role="button">instagram</a>
+        </div>
+    </body>
+</html>
